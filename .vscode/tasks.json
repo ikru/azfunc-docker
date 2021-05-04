@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "docker-compose-up",
+            "type": "shell",
+            "command": "docker-compose up --build",
+            "problemMatcher": []
+        },
+        {
+            "label": "docker-compose-down",
+            "type": "shell",
+            "command": "docker-compose down",
+            "problemMatcher": []
+        },
+        {
+            "label": "build-azfunc",
+            "type": "shell",
+            "command": "./scripts/func-build.sh",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch-azfunc",
+            "type": "shell",
+            "command": "./scripts/func-watch.sh",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "call-azfunc",
+            "type": "shell",
+            "command": "curl http://localhost:7081/api/HttpTrigger",
+            "problemMatcher": "$msCompile",
+            "presentation": {
+                "reveal": "silent"
+            }
+        },
+        {
+            "label": "deploy-azfunc",
+            "type": "shell",
+            "command": "./scripts/func-deploy.sh",
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
