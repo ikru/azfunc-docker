@@ -24,4 +24,5 @@ RUN npm install gulp --global
 RUN npm install yo --global
 RUN npm install @microsoft/generator-sharepoint --global --unsafe-perm=true --allow-root
 WORKDIR /app/spfx
+RUN npm install
 RUN gulp trust-dev-cert
