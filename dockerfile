@@ -18,13 +18,3 @@ RUN apt update && \
     apt -y install procps && \
     curl -sSL https://aka.ms/getvsdbgsh | /bin/sh /dev/stdin -v latest -l /vsdbg
 WORKDIR /app
-
-FROM node:14.15 as spfx-debug
-RUN npm install gulp --global
-RUN npm install yo --global
-RUN npm install @microsoft/generator-sharepoint --global --unsafe-perm=true --allow-root
-# RUN npm install node-sass@4.14.1 --global --unsafe-perm=true --allow-root
-WORKDIR /app/spfx
-# COPY ./spfx/package.json ./
-# RUN npm install --ignore-optional
-# COPY ./ /app/

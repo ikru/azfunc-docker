@@ -1,7 +1,7 @@
 # Hints
 - Run tasks
-    - docker-compose up
-    - watch or debug
+    - docker-compose-up-
+    - func-watch or func-debug for azure function
 - After running debug command
     - press F5 and select func process
     - call http url from CMD in browser

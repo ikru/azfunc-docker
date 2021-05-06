@@ -10,7 +10,7 @@
             "request": "attach",
             "processId": "${command:pickRemoteProcess}",
             "sourceFileMap": {
-                "/azfunc": "${workspaceRoot}"
+                "/app": "${workspaceRoot}"
             },
             "pipeTransport": {
                 "pipeProgram": "docker",

@@ -1,16 +1,10 @@
 {
     "version": "2.0.0",
     "tasks": [
-        {
-            "label": "docker-compose-up-spfx",
+       {
+            "label": "docker-compose-up",
             "type": "shell",
-            "command": "docker-compose up --build -d spfx-debug",
-            "problemMatcher": []
-        },
-        {
-            "label": "docker-compose-up-azfunc",
-            "type": "shell",
-            "command": "docker-compose up --build -d func-debug",
+            "command": "docker-compose up --build",
             "problemMatcher": []
         },
         {
@@ -34,7 +28,7 @@
         {
             "label": "azfunc-call",
             "type": "shell",
-            "command": "curl http://localhost:7081/api/HttpTrigger",
+            "command": "curl http://localhost:7071/api/HttpTrigger",
             "problemMatcher": "$msCompile",
             "presentation": {
                 "reveal": "silent"
@@ -44,18 +38,6 @@
             "label": "azfunc-deploy",
             "type": "shell",
             "command": "./scripts/func-deploy.sh",
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "spfx-npm-install",
-            "type": "shell",
-            "command": "./scripts/spfx-npm-install.sh",
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "spfx-gulp-serve",
-            "type": "shell",
-            "command": "./scripts/spfx-gulp-serve.sh",
             "problemMatcher": "$msCompile"
         }
     ]

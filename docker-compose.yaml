@@ -10,18 +10,5 @@ services:
     volumes:
       - ./:/app    
     ports:
-      - "7081:7081"
-    tty: true
-  spfx-debug:
-    build: 
-      context: .
-      target: spfx-debug
-    container_name: spfx-debug
-    hostname: spfx
-    volumes:
-      - ./:/app    
-    ports:
-      - "4321:4321"
-      - "5432:5432"
-      - "35729:35729"
+      - "7071:7071"
     tty: true
