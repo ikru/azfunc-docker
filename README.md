@@ -1,4 +1,6 @@
-# Hints
+# Debugging Azure Funcion inside docker container
+
+## Hints
 - Run tasks
     - docker-compose-up-
     - func-watch or func-debug for azure function
@@ -6,7 +8,7 @@
     - press F5 and select func process
     - call http url from CMD in browser
 
-# Configuring an application Client Id and Client Key
+## Configuring an application Client Id and Client Key
 
 - Go to <siteUrl>/_layouts/15/appregnew.aspx
 - Generate Client (App) Id, Client Key, other fields put something
@@ -18,10 +20,10 @@
     </AppPermissionRequests>
 - Give consent to Trust it
 
-# VS Code
+## VS Code
 - Docker Extension
 - C# Extension
 
-# Docker configuration
+## Docker configuration
 
 - Enable volume sharing
