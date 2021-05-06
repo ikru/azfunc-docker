@@ -1,4 +1,4 @@
-# Debugging Azure Funcion inside docker container
+# Developing and Debugging Azure Funcion inside docker container
 
 ## Hints
 - Run tasks
