@@ -18,6 +18,6 @@
   </ItemGroup>
   <Target Name="RunFunction">
     <Exec Command="dotnet build --no-restore" />
-    <Exec Command="func start --functions HttpTrigger --no-build --prefix bin/Debug/netcoreapp3.1" />
+    <Exec Command="func start --functions HttpTrigger --no-build --prefix $(OutputPath)/netcoreapp3.1" />
   </Target>
 </Project>

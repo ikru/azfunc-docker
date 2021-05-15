@@ -17,7 +17,6 @@ namespace AzureFunction
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            
             Runner.Run(log);
             
             log.LogInformation("C# HTTP trigger function processed a request.");

@@ -8,7 +8,7 @@ services:
       target: func-debug
     container_name: func-debug
     volumes:
-      - ./:/app    
+      - ./azfunc/:/app/azfunc    
     ports:
       - "7071:7071"
     tty: true
