@@ -18,3 +18,4 @@ RUN apt update && \
     apt -y install procps && \
     curl -sSL https://aka.ms/getvsdbgsh | /bin/sh /dev/stdin -v latest -l /vsdbg
 WORKDIR /app
+the treanding topic is going on through some extend
